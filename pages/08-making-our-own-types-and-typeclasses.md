@@ -3,7 +3,7 @@ layout: post
 title: Making our own Types
 ---
 
-Making Our Own Types and Typeclasses
+Making Our Own Types
 ====================================
 
 In the previous chapters, we covered some existing Elm types.
