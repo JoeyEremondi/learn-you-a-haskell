@@ -328,10 +328,6 @@ would be in the second list? It doesn't make much sense. It would make
 sense to match stuff against `(xs ++ [x,y,z])` or just `(xs ++ [x])`, but
 because of the nature of lists, you can't do that.
 
-*Note:* Not only can we call functions as infix with backticks, we can
-also define them using backticks. Sometimes it's easier to read that
-way.
-
 Let it be
 ---------
 
