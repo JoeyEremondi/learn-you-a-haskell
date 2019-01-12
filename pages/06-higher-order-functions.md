@@ -341,7 +341,7 @@ Pretty simple stuff. If `p x` evaluates to `True`, the element gets included
 in the new list. If it doesn't, it stays out. Some usage examples:
 
 ```elm
-> List.filter ((>) 3) [1,5,3,2,1,6,4,3,2,1]
+> List.filter ((<) 3) [1,5,3,2,1,6,4,3,2,1]
 [5,6,4] : List number
 > List.filter ((==) 3) [1,2,3,4,5]
 [3] : List number
