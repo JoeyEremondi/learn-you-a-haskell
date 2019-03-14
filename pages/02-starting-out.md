@@ -286,19 +286,14 @@ every number that's produced in our previous function, we could have
 written its body like this.
 
 ```elm
-doubleSmallNumber' x = (if x > 100 then x else x*2) + 1
+doubleSmallNumber2 x = (if x > 100 then x else x*2) + 1
 ```
 
 Had we omitted the parentheses, it would have added one only if `x` wasn't
-greater than 100. Note the `'` at the end of the function name. That
-apostrophe doesn't have any special meaning in Elm's syntax. It's a
-valid character to use in a function name. We usually use `'` to
-denote a
-slightly modified version of a function or a variable. Because `'` is a
-valid character in functions, we can make a function like this.
+greater than 100.
 
 ```elm
-conanO'Brien = "It's a-me, Conan O'Brien!"
+conanOBrien = "It's a-me, Conan O'Brien!"
 ```
 
 There are two noteworthy things here. The first is that in the function
