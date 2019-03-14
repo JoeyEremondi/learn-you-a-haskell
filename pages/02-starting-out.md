@@ -183,21 +183,6 @@ toPrint = (identity 9) + (max 5 4) + 1
 15
 ```
 
-
-If a function takes two parameters, we can also call it as an infix
-function by surrounding it with backticks. For instance, the `rem`
-function takes two integers and gives the remainder when you
-divide the first by the second.
-Doing `rem 92 10` results in a 2. But when we call it like that, there may
-be some confusion as to which number is doing the division and which one
-is being divided. So we can call it as an infix function by doing ``92
-`rem` 10`` and suddenly it's much clearer.
-
-```elm
-toPrint = 92 `rem` 10
-2
-```
-
 Lots of people who come from imperative languages tend to stick to the
 notion that parentheses should denote function application. For example,
 in C, you use parentheses to call functions like `foo()`, `bar(1)` or `baz(3,
