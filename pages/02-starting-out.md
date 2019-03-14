@@ -26,7 +26,7 @@ basic computations.
 import Html
 
 main =
-  Html.text (toString toPrint)
+  Html.text (Debug.toString toPrint)
   
 toPrint = 0
 ```
@@ -41,7 +41,7 @@ To see different values, just change what is after
 import Html
 
 main =
-  Html.text (toString toPrint)
+  Html.text (Debug.toString toPrint)
   
 toPrint =
   2 + 15
