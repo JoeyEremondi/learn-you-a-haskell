@@ -74,7 +74,7 @@ constructors.
 > Circle
 <function> : Float -> Float -> Float -> Shape
 > Rectangle
-<function> : Float -> Float -> Float -> Shape
+<function> : Float -> Float -> Float -> Float -> Shape
 ```
 
 Cool, so value constructors are functions like everything else. Who
@@ -112,8 +112,8 @@ them and everything. If we want a list of concentric circles with
 different radii, we can do this.
 
 ```elm
-> List.map (Circle 10 20) [4,5,6,6]
-[Circle 10.0 20.0 4.0,Circle 10.0 20.0 5.0,Circle 10.0 20.0 6.0,Circle 10.0 20.0 6.0] : List Shape
+> List.map (Circle 10 20) [4,5,6,7]
+[Circle 10.0 20.0 4.0,Circle 10.0 20.0 5.0,Circle 10.0 20.0 6.0,Circle 10.0 20.0 7.0] : List Shape
 ```
 
 Our data type is good, although it could be better. Let's make an
