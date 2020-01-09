@@ -1016,9 +1016,9 @@ treeElem : comparable -> Tree comparable -> Bool
 treeElem x t = case t of
     EmptyTree -> False
     (Node a left right) ->
-    if x == a then True
-    else if x < a then treeElem x left
-    else treeElem x right
+        if x == a then True
+        else if x < a then treeElem x left
+        else treeElem x right
 ```
 
 All we had to do was write up the previous paragraph in code. Let's have
