@@ -26,7 +26,7 @@ basic computations.
 import Html
 
 main =
-  Html.text (toString toPrint)
+  Html.text (Debug.toString toPrint)
   
 toPrint = 0
 ```
@@ -41,7 +41,7 @@ To see different values, just change what is after
 import Html
 
 main =
-  Html.text (toString toPrint)
+  Html.text (Debug.toString toPrint)
   
 toPrint =
   2 + 15
@@ -183,21 +183,6 @@ toPrint = (identity 9) + (max 5 4) + 1
 15
 ```
 
-
-If a function takes two parameters, we can also call it as an infix
-function by surrounding it with backticks. For instance, the `rem`
-function takes two integers and gives the remainder when you
-divide the first by the second.
-Doing `rem 92 10` results in a 2. But when we call it like that, there may
-be some confusion as to which number is doing the division and which one
-is being divided. So we can call it as an infix function by doing ``92
-`rem` 10`` and suddenly it's much clearer.
-
-```elm
-toPrint = 92 `rem` 10
-2
-```
-
 Lots of people who come from imperative languages tend to stick to the
 notion that parentheses should denote function application. For example,
 in C, you use parentheses to call functions like `foo()`, `bar(1)` or `baz(3,
@@ -301,19 +286,14 @@ every number that's produced in our previous function, we could have
 written its body like this.
 
 ```elm
-doubleSmallNumber' x = (if x > 100 then x else x*2) + 1
+doubleSmallNumber2 x = (if x > 100 then x else x*2) + 1
 ```
 
 Had we omitted the parentheses, it would have added one only if `x` wasn't
-greater than 100. Note the `'` at the end of the function name. That
-apostrophe doesn't have any special meaning in Elm's syntax. It's a
-valid character to use in a function name. We usually use `'` to
-denote a
-slightly modified version of a function or a variable. Because `'` is a
-valid character in functions, we can make a function like this.
+greater than 100.
 
 ```elm
-conanO'Brien = "It's a-me, Conan O'Brien!"
+conanOBrien = "It's a-me, Conan O'Brien!"
 ```
 
 There are two noteworthy things here. The first is that in the function
